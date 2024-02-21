@@ -2,10 +2,8 @@
 #define ALL_FUNC_H
 
 struct polish_notation{
-    
     char data;
     struct polish_notation* next;
-
 };
 
 struct symbol{
@@ -16,6 +14,7 @@ struct symbol{
     
 };
 
+int input(char * a, int count);
 struct polish_notation * init_first(char data, struct polish_notation * last);
 struct symbol * pop_symbol(struct symbol * top);
 struct symbol * push_symbol(char data, int priority, struct symbol * top);

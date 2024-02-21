@@ -10,9 +10,14 @@ int main(){
     struct polish_notation * first = NULL;
     struct polish_notation * last = NULL;
     struct symbol * top = NULL;
-    int count;
+    int count, len;
     scanf("%s", arr);
     count = strlen(arr);
-    check(arr, count, first, last, top);
+    len = input(arr, count);
+    // for(int i = 0; i < len; i ++){
+    //     printf("%c", arr[i]);
+    // }
+    check(arr, len, first, last, top);
     return 0;
 }
+
